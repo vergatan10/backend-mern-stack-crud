@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/64075aab6152b768dfdbf353
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Vina",
+    "email" : "vina@gmail.com",
+    "gender" : "Female"
+}
+
+###
+PATCH  http://localhost:5000/users/64075aab6152b768dfdbf353
+Content-Type: application/json
+
+{
+    "name": "Jhon",
+    "email" : "jhon@gmail.com",
+    "gender" : "Male"
+}
+
+
+###
+DELETE  http://localhost:5000/users/640758f5ddf956eb1fcdb1ef
